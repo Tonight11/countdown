@@ -5,7 +5,7 @@ if (typeof(birthday) != 'object') {
 	window.location.reload();
 }
 
-const name = prompt("Введите свое Имя");
+
 
 
 let days = document.getElementById('days');
@@ -17,6 +17,7 @@ let wrapper = document.querySelector('.countdown');
 
 function countdown() {
 	const currentDate = new Date();
+	const name = prompt("Введите свое Имя");
 
 	let totalSecond = (birthday - currentDate) / 1000;
 
