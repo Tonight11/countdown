@@ -1,4 +1,10 @@
 const birthday = new Date(prompt("Введите через запятую дату вашего ближайщего дня рождения(год,месяц,день==2022,01,21)"));
+
+if (typeof(birthday) != 'object') {
+	alert("Обновите страницу. Напишите дату и ничто другое, соблюдайте правила");
+	window.location.reload();
+}
+
 const name = prompt("Введите свое Имя");
 
 
@@ -8,12 +14,6 @@ let minutes = document.getElementById('minutes');
 let seconds = document.getElementById('seconds');
 let wrapper = document.querySelector('.countdown');
 
-
-
-if (typeof(birthday) != 'object') {
-	alert("Обновите страницу. Напишите дату и ничто другое, соблюдайте правила");
-	window.location.reload();
-}
 
 function countdown() {
 	const currentDate = new Date();
