@@ -10,7 +10,7 @@ let seconds = document.getElementById('seconds');
 
 
 if (typeof(birthday) != 'object') {
-	alert("Обновите страницу. Напишите дату и ничто другое, соблюдайте правила");
+	alert("Обновите страницу. Напишите дату и ничто другое, соблюдайте правила. C Уважением Баястан");
 	window.location.reload();
 }
 
