@@ -472,6 +472,12 @@ body {
   }
 }
 
+.countdown h1 {
+  font-size: 96px;
+  color: #ffbf00;
+  text-align: center;
+}
+
 .countdown__item {
   display: -webkit-box;
   display: -ms-flexbox;
