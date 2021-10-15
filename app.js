@@ -22,6 +22,11 @@ function countdown() {
 	let hour = Math.floor(totalSecond / 3600) % 24;
 	let minute = Math.floor(totalSecond / 60) % 60;
 	let second = Math.floor(totalSecond % 60);
+	
+	if (isNaN(day) || isNaN(hour) || isNaN(minute) || isNaN(second) || day < 0) {
+		alert("Обновите страницу. Напишите дату и ничто другое, соблюдайте правила");
+		window.location.reload();
+	}
 
 	if (day == 0 && second == 0 && hour == 0 && minute == 0) {
 		wrapper.innerHTML = `<h1>Happy Birthday ${name}</h1>`
